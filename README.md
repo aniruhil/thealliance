@@ -1,2 +1,2 @@
 # thealliance
-The Ohio Alliance for Innovation in Public Health
+The blog repository of The Ohio Alliance for Innovation in Public Health
