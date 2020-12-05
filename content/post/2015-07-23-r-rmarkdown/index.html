@@ -6,6 +6,8 @@ categories: ["R"]
 tags: [""]
 header:
   image: 'header.png'
+editor_options: 
+  chunk_output_type: console
 ---
 
 <script src="{{< relref "post/2015-07-23-r-rmarkdown/index.html" >}}index_files/header-attrs/header-attrs.js"></script>
@@ -37,18 +39,23 @@ fit
 </div>
 <div id="including-plots" class="section level1">
 <h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
+<p>You can also embed plots. See Figure @ref(fig:geom_hex) for example:</p>
+<pre class="r"><code>library(tidyverse)
+## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.4     ✓ dplyr   1.0.2
+## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
+## ✓ readr   1.4.0     ✓ forcats 0.5.0
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+
+ggplot(diamonds, aes(x = carat, y = price, fill = color)) +
+  geom_hex()</code></pre>
 <div class="figure"><span id="fig:pie"></span>
-<img src="{{< relref "post/2015-07-23-r-rmarkdown/index.html" >}}index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<img src="{{< relref "post/2015-07-23-r-rmarkdown/index.html" >}}index_files/figure-html/pie-1.png" alt="A geom_hex() plot." width="672" />
 <p class="caption">
-Figure 1: A fancy pie chart.
+Figure 1: A geom_hex() plot.
 </p>
 </div>
 </div>

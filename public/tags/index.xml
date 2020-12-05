@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | The Ohio Alliance Blog</title>
-    <link>/tags/</link>
-      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://competent-wright-033824.netlify.app/tags/</link>
+      <atom:link href="https://competent-wright-033824.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>@TheAlliance</copyright>
     <image>
-      <url>/images/logo_huade80af78d6ce3b9ed41d2f86ba40934_172439_300x300_fit_lanczos_2.png</url>
+      <url>https://competent-wright-033824.netlify.app/images/logo_huade80af78d6ce3b9ed41d2f86ba40934_172439_300x300_fit_lanczos_2.png</url>
       <title>Tags</title>
-      <link>/tags/</link>
+      <link>https://competent-wright-033824.netlify.app/tags/</link>
     </image>
     
   </channel>

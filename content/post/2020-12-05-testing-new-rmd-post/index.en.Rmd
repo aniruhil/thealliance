@@ -1,17 +1,26 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
-categories: ["R"]
-tags: [""]
-header:
-  image: 'header.png'
-editor_options: 
-  chunk_output_type: console
+title: Testing new Rmd post
+author: Ani Ruhil
+date: '2020-12-05'
+slug: testing-new-rmd-post
+categories:
+  - R
+tags:
+  - Health
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-05T08:31:12-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, dev = "svg", fig.retina = 1)
 ```
 
 
@@ -29,11 +38,12 @@ fit
 
 # Including Plots
 
-You can also embed plots. See Figure \@ref(fig:geom_hex) for example:
+You can also embed plots. See Figure \@ref(fig:ghex) for example:
 
-```{r pie, fig.cap = 'A geom_hex() plot.'}
+```{r ghex, fig.cap = 'A geom_hex() plot.'}
 library(tidyverse)
 
 ggplot(diamonds, aes(x = carat, y = price, fill = color)) +
   geom_hex()
 ```
+

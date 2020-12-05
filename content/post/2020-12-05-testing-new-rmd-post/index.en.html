@@ -1,0 +1,62 @@
+---
+title: Testing new Rmd post
+author: Ani Ruhil
+date: '2020-12-05'
+slug: testing-new-rmd-post
+categories:
+  - R
+tags:
+  - Health
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-05T08:31:12-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/header-attrs/header-attrs.js"></script>
+<link href="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<pre class="r"><code>fit &lt;- lm(dist ~ speed, data = cars)
+fit</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:ghex">1</a> for example:</p>
+<pre class="r"><code>library(tidyverse)
+
+ggplot(diamonds, aes(x = carat, y = price, fill = color)) +
+  geom_hex()</code></pre>
+<div class="figure"><span id="fig:ghex"></span>
+<img src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/figure-html/ghex-1.svg" alt="A geom_hex() plot."  />
+<p class="caption">
+Figure 1: A geom_hex() plot.
+</p>
+</div>
+</div>
