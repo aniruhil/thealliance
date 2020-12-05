@@ -12,20 +12,32 @@ summary: ''
 authors: []
 lastmod: '2020-12-05T08:31:12-05:00'
 featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
 projects: []
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+    toc_depth: 2  
+image: 
+  placement: 2
+  caption: "Testing new Rmd post"
+  focal_point: "center"
+  preview_only: true  
 ---
 
 <script src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/header-attrs/header-attrs.js"></script>
 <link href="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
 <script src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/anchor-sections/anchor-sections.js"></script>
 
+<div id="TOC">
+<ul>
+<li><a href="#r-markdown"><span class="toc-section-number">1</span> R Markdown</a></li>
+<li><a href="#including-plots"><span class="toc-section-number">2</span> Including Plots</a></li>
+</ul>
+</div>
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
+<div id="r-markdown" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> R Markdown</h1>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
 <pre class="r"><code>summary(cars)</code></pre>
@@ -46,9 +58,9 @@ fit</code></pre>
 ## (Intercept)        speed  
 ##     -17.579        3.932</code></pre>
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:ghex">1</a> for example:</p>
+<div id="including-plots" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:ghex">2.1</a> for example:</p>
 <pre class="r"><code>library(tidyverse)
 
 ggplot(diamonds, aes(x = carat, y = price, fill = color)) +
@@ -56,7 +68,7 @@ ggplot(diamonds, aes(x = carat, y = price, fill = color)) +
 <div class="figure"><span id="fig:ghex"></span>
 <img src="{{< relref "post/2020-12-05-testing-new-rmd-post/index.en.html" >}}index.en_files/figure-html/ghex-1.svg" alt="A geom_hex() plot."  />
 <p class="caption">
-Figure 1: A geom_hex() plot.
+Figure 2.1: A geom_hex() plot.
 </p>
 </div>
 </div>
