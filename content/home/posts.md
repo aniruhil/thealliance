@@ -7,8 +7,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
-title = "The Ohio Alliance Blog"
-subtitle = ""
+title = "Posts from the Ohio Alliance for Innovation in Population Health"
+subtitle = "OAIPH @ Ohio University"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
