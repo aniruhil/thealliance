@@ -1,7 +1,7 @@
 ---
 header:
   caption: ""
-  image: "oaiph_header.png"
+  image: "header.png"
 title: Posts
 view: 3
 ---

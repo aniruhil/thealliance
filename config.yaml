@@ -1,5 +1,5 @@
-theme:
-title: The Ohio Alliance Blog
+#theme: 'starter-academic'
+title: "The Ohio Alliance Blog"
 baseurl: /
 copyright: ''
 enableGitInfo: no
